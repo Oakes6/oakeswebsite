@@ -9,3 +9,15 @@ class HomeView(TemplateView):
 # work experience
 class WorkExperienceView(TemplateView):
     template_name = 'app1/workexperience.html'
+
+# about
+class AboutView(TemplateView):
+    template_name = "app1/about.html"
+
+# extracurriculars
+class ExtracurricularsView(TemplateView):
+    template_name = "app1/extracurriculars.html"
+
+# Skills
+class Skills(TemplateView):
+    template_name = "app1/skills.html"
