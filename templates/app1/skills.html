@@ -1,20 +1,36 @@
 {% extends "base.html" %}
 {% block body_block %}
-   <div class="jumbotron">
+
       <h1 align="center">Skills</h1>
-   </div>
+      <hr>
    <div class="container">
-      <ul>
-         <li>Java</li>
-         <li>Python</li>
-         <li>Django</li>
-         <li>C#</li>
-         <li>CSS</li>
-         <li>Bootstrap</li>
-         <li>Javascript</li>
-         <li>HTML</li>
-         <li>Agile/Scrum</li>
-         <li>jQuery</li>
-      </ul>
+      <div class="row">
+         <div class="col-lg-4">
+            <h1 class="skill" align="center">Java</h1>
+            <h1 class="skill" align="center">C#</h1>
+            <h1 class="skill" align="center">Bootstrap</h1>
+            <h1 class="skill" align="center">Javascript</h1>
+         </div>
+         <div class="col-lg-4">
+            <h1 class="skill" align="center">Python</h1>
+            <h1 class="skill" align="center">CSS</h1>
+            <h1 class="skill" align="center">Agile/Scrum</h1>
+            <h1 class="skill" align="center">Aruino</h1>
+            <h1 class="skill" align="center">C++</h1>
+         </div>
+         <div class="col-lg-4">
+            <h1 class="skill" align="center">Django</h1>
+            <h1 class="skill" align="center">HTML</h1>
+            <h1 class="skill" align="center">Agile/Scrum</h1>
+            <h1 class="skill" align="center">jQuery</h1>
+         </div>
+      </div>
    </div>
+   <script>
+      $('.skill').hover(function(){
+         $(this).addClass('hoverOnSkill');
+      }, function(){
+         $(this).removeClass('hoverOnSkill');
+      });
+   </script>
 {% endblock %}

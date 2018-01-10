@@ -21,6 +21,11 @@ h1, h2, h4, li {
    font-family: Play;
 }
 
+.hoverOnSkill {
+   color: teal;
+   font-size: 60px;
+}
+
 .jumbotron {
    background-color: lightblue;
 }
