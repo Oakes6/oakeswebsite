@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'app1',
+    'contactapp',
 ]
 
 MIDDLEWARE = [
@@ -124,3 +124,10 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     STATIC_DIR,
 ]
+
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'TOakes'
+EMAIL_HOST_PASSWORD = 'ecpats04'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
