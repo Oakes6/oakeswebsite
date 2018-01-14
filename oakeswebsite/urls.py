@@ -15,10 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from app1 import views
+from contactapp import views
 
 urlpatterns = [
     url(r'^$', views.HomeView.as_view(), name='home'),
     url(r'^admin/', admin.site.urls),
-    url('^app1/', include('app1.urls',namespace='app1')),
+    url(r'^contactapp/', include('contactapp.urls',namespace='contactapp')),
+    url(r'^workexperience/$', views.WorkExperienceView.as_view(),name="workexperience"),
+    url(r'^about/$',views.AboutView.as_view(),name="about"),
+    url(r'^extracurriculars/$',views.ExtracurricularsView.as_view(),name="extracurriculars"),
+    url(r'^skills/$',views.Skills.as_view(),name="skills"),
 ]

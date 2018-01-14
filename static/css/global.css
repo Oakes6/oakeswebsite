@@ -6,6 +6,11 @@
    min-height: 500px;
 }
 
+body {
+   background-color: #2f2f2f;
+   color: #9d9d9d;
+}
+
 img {
    display: block;
    max-width: 1000px;
@@ -19,6 +24,20 @@ ul {
 
 h1, h2, h4, li {
    font-family: Play;
+   color: #9d9d9d;
+}
+
+.wrapper {
+   text-align: center;
+}
+
+#contactbutton {
+   display: none;
+   font-family: Play;
+}
+
+#bodycontainer {
+   text-align: center;
 }
 
 .hoverOnSkill {
@@ -31,6 +50,6 @@ h1, h2, h4, li {
 }
 
 hr {
-   border-color: black;
-   color: black;
+   border-color: #9d9d9d;
+   color: #9d9d9d;
 }
