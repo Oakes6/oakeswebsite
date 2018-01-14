@@ -38,6 +38,9 @@ h1, h2, h4, li {
 
 #bodycontainer {
    text-align: center;
+   width: 800px;
+   font-family: Play;
+   font-size: 20px;
 }
 
 .hoverOnSkill {
