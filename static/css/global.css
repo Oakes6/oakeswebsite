@@ -20,7 +20,10 @@ img {
 ul {
    width: 65%;
    margin: auto;
+<<<<<<< HEAD
    list-style-type: none;
+=======
+>>>>>>> 508ac67cd8bd051d58c01b4b8dc6c8119afb3b05
 }
 
 h1, h2, h4, li {
