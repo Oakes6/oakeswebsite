@@ -1,56 +1,103 @@
-#navbar {
-   width: 80px;
-   height: 100%;
-   position: absolute;
-   top: 0;
-   min-height: 500px;
-}
 
 body {
    background-color: #2f2f2f;
    color: #9d9d9d;
 }
 
-img {
-   display: block;
-   max-width: 1000px;
-   height: 100px;
+.wrap {
+   max-width: 80rem;
+   margin: 0 auto;
 }
 
-ul {
-   width: 65%;
-   margin: auto;
-   list-style-type: none;
-}
-
-h1, h2, h4, li {
-   font-family: Play;
+.first {
+   align-items: center;
+   background-color: #2f2f2f;
    color: #9d9d9d;
+   min-height: 100%;
+   height: 400px;
+   font-family: Play;
+}
+
+.secondary {
+   background-color: #9d9d9d;
+   color: #2f2f2f;
+
+}
+
+.primary {
+   background-color: #2f2f2f;
+   color: #9d9d9d;
+}
+
+#skills-table h1 {
+   align: center;
+   align-content: center;
+   text-align: center;
+   font-family: Play;
+}
+
+#projects-table h1 {
+   align: center;
+   align-content: center;
+   text-align: center;
+   font-family: Play;
+}
+
+.separator {
+   height: 400px;
+   font-family: Play;
+}
+
+.proj-container {
+   height: 50px;
+   width: 50px;
+}
+
+.proj-col {
+      text-align: center;
+      font-family: arial;
+}
+
+.proj-box {
+   box-shadow: 5px 10px rgb(99, 96, 101);
+   height: 250px;
+   width: 100%;
+}
+
+#socialsBar li {
+   display: inline-block;
+   color: #2f2f2f;
+   font-size: 2.5em;
+   padding: 0 1em 0 0;
+}
+
+#copyright {
+   text-align: center;
 }
 
 .wrapper {
    text-align: center;
 }
 
-#contactbutton {
-   display: none;
+#contactButton {
+   align: center;
+   align-items: center;
+   align-content: center;
+   align-self: center;
+   text-align: center;
+   width: 100%;
+   color: white;
    font-family: Play;
+   background-color: #9d9d9d;
 }
 
-#bodycontainer {
-   text-align: center;
-   width: 800px;
-   font-family: Play;
-   font-size: 20px;
+#welcomemessage {
+      padding-top: 50px;
 }
 
 .hoverOnSkill {
-   color: teal;
+   color: white;
    font-size: 60px;
-}
-
-.jumbotron {
-   background-color: lightblue;
 }
 
 hr {

@@ -1,33 +1,129 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block body_block %}
-   <div class="container-fluid wrapper">
+   <div class="first">
       <br>
       <br>
       <br>
-      <h1 id="welcomemessage"></h1>
-      <a id="contactbutton" href="{% url 'contactapp:contact' %}" class="btn btn-default">Contact Me</a>
-      <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-      crossorigin="anonymous"></script>
-      <!-- <script src="{% static 'js/welcomemessage.js' %}"></script> -->
-      <script>
-         var i = 0;
-         var txt = "Welcome, I'm Tanner, software engineering student.";
-         var speed = 50;
+      <h1 id="welcomemessage" align="center"></h1>
+      <br>
+      <br>
+      <br>
+      <div class="row">
+         <div class="col-lg-4">
 
-         $(document).ready(function() {
-            $('#contactbutton').delay(2500).fadeIn(2000);
-         })
+         </div>
+         <div class="col-lg-4">
+            <a id="contactButton" href="mailto:tanner.w.oakes@gmail.com?Subject=Hi" class="btn btn-default" target="_top">Contact Me</a>
+         </div>
+         <div class="col-lg-4">
 
-         function typeWriter() {
-            if (i < txt.length) {
-               document.getElementById("welcomemessage").innerHTML += txt.charAt(i);
-               i++;
-               setTimeout(typeWriter, speed);
-            }
-         }
-
-         typeWriter();
-      </script>
+         </div>
+      </div>
+      <!-- <h3 id="contactBar" align="center">Contact me: <a href="mailto:tanner.w.oakes@gmail.com" style="color:#9d9d9d"><span class="fa fa-envelope-o"></span></a></h3> -->
    </div>
+
+   <div class="separator secondary">
+      <h1>Projects</h1>
+      <div id="projects-table" class="container">
+         <div class="row">
+            <div class="col-lg-4 proj-col">
+               <a href="https://github.com/Oakes6/VirtualMemorySimulator">
+                  <img class="img-responsive img-rounded proj-box" src="{% static "images/vmm.png" %}" alt="">
+               </a>
+               <br>
+               <h5>Virtual Memory Simulator</h5>
+            </div>
+            <div class="col-lg-4 proj-col">
+               <a href="https://github.com/Oakes6/trie_autocomplete">
+                  <img class="img-responsive img-rounded proj-box" src="{% static "images/autocomplete.png"  %}" alt="">
+               </a>
+               <br>
+               <h5>Trie Autocomplete</h5>
+            </div>
+            <div class="col-lg-4 proj-col">
+               <a href="https://github.com/Oakes6/HaikuApp">
+                  <img class="img-responsive img-rounded proj-box" src="{% static "images/haiku.png" %}" alt="">
+               </a>
+               <br>
+               <h5>Haiku Android App</h5>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="separator primary">
+      <h1>Skills</h1>
+      <div id="skills-table" class="container">
+         <div class="row">
+            <div class="col-lg-4">
+               <h1 class="skill">Java</h1>
+               <h1 class="skill">C#</h1>
+               <h1 class="skill">Bootstrap</h1>
+               <h1 class="skill">Javascript</h1>
+            </div>
+            <div class="col-lg-4">
+               <h1 class="skill">Python</h1>
+               <h1 class="skill">CSS</h1>
+               <h1 class="skill">Git</h1>
+               <h1 class="skill">Arduino</h1>
+               <h1 class="skill">MVC/MVVM</h1>
+            </div>
+            <div class="col-lg-4">
+               <h1 class="skill">Django</h1>
+               <h1 class="skill">HTML</h1>
+               <h1 class="skill">C++</h1>
+               <h1 class="skill">jQuery</h1>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="separator secondary">
+      <div class="container">
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <ul id="socialsBar" align="center">
+            <li><a href="https://github.com/Oakes6" style="color:#2f2f2f"><span class="fa fa-github fa-lg"></span></a></li>
+            <li><a href="https://www.linkedin.com/in/tanner-oakes-67b9b7108/" style="color:#2f2f2f"><span class="fa fa-linkedin-square fa-lg"></span></a></li>
+         </ul>
+         <h4 id="copyright">Content Tanner Oakes <span class="fa fa-copyright"></span> 2018</h3>
+      </div>
+   </div>
+
+   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+   crossorigin="anonymous"></script>
+   <!-- <script src="{% static 'js/welcomemessage.js' %}"></script> -->
+   <script>
+      var i = 0;
+      var txt = "Welcome, I'm Tanner, software engineering student.";
+      var speed = 50;
+
+      $(document).ready(function(i) {
+         // $('#contactbutton').delay(2500).fadeIn(2000);
+         $('#contactButton').hide();
+         $('#contactButton').delay(2500).fadeIn(2000);
+      });
+
+      function typeWriter() {
+         if (i < txt.length) {
+            document.getElementById("welcomemessage").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+         }
+      }
+
+      typeWriter();
+
+      $('.skill').hover(function(){
+         $(this).addClass('hoverOnSkill');
+      }, function(){
+         $(this).removeClass('hoverOnSkill');
+      });
+   </script>
 {% endblock %}

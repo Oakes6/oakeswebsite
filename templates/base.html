@@ -23,35 +23,14 @@
       <link href="https://fonts.googleapis.com/css?family=Montserrat|Russo+One" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
       <!-- <script src="{% static 'js/typewriteranimation.js' %}"></script> -->
+
+      <!-- Font Awesome Icons -->
+      <script src="https://use.fontawesome.com/d7494c8d80.js"></script>
    </head>
    <body>
 
-      <nav class="navbar navbar-default navbar-inverse">
-         <div class="container-fluid">
-            <!-- MOBILE VIEW GROUPING -->
-            <div class="navbar-header">
-               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-               </button>
-               <a class="navbar-brand" href="{% url 'home' %}">Home</a>
-            </div>
-
-            <div class="collapse navbar-collapse">
-               <ul class="nav navbar-nav">
-                  <li><a href="{% url 'about' %}">About</a></li>
-                  <li><a href="{% url 'workexperience' %}">Experience</a></li>
-                  <li><a href="{% url 'skills' %}">Skills</a></li>
-                  <li><a href="{% url 'extracurriculars' %}">Projects</a></li>
-                  <!-- <li><a href="#">Hobbies</a></li> -->
-               </ul>
-            </div>
-         </div>
-      </nav>
       {% block body_block %}
       {% endblock%}
-
+      
    </body>
 </html>
