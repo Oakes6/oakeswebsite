@@ -1,12 +1,15 @@
 
 body {
    background-color: #2f2f2f;
+   position: relative;
+   height: auto;
+   min-height: 100% !important;
    color: #9d9d9d;
 }
 
 .wrap {
-   max-width: 80rem;
    margin: 0 auto;
+   width: 100%;
 }
 
 .first {
@@ -44,7 +47,8 @@ body {
 }
 
 .separator {
-   height: 400px;
+   display: block;
+   overflow: auto;
    font-family: Play;
 }
 
